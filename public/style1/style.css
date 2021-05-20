@@ -7,7 +7,7 @@ body{
 header{
     box-sizing: border-box;
     background-color: rgb(160, 156, 156);
-    width: 425px;
+    width: 100%;
     display: flex;
     justify-content:flex-start;
     text-align: justify;
@@ -28,7 +28,7 @@ hgroup{
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    max-width: 425px;
+    max-width: 100%;
 }
 h3{
     color: black;
@@ -131,87 +131,6 @@ h4{
 }
 .contact-value :not(:nth-child(2)){
     color: red;
-}
-
-@media(min-width: 768px) {
-    header{
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: 180px;
-    }
-    hgroup{
-        position: relative;
-        margin-left: 200px;
-        bottom: 15px;
-
-    }
-    figure img{
-        position: absolute;
-        top: 20px;
-        margin-left: 400px;
-    }
-    .content{
-        display: grid;
-    grid-template-columns: 2fr 2fr;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-
-    }
-    .contacts{
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 500px;
-        display: grid;
-        grid-template-columns: 30% 70%;
-        width: 50%;
-        display: flex;
-        text-align: left;
-        justify-content: left;
-        margin-left: auto;
-        top: 10px;
-
-
-    }
-    .contact-type{
-        position: relative;
-        width: 30%;
-    }
-    
-    .contact-value{
-        position:relative;
-        left: 0;
-        box-sizing: border-box;
-        background-color: black;
-        width: 70%;
-
-    }
-    .contact-value>a{
-        text-decoration: none;
-    }
-    #contact h3{
-        visibility: hidden;
-    }
-    .skills-primary::before{
-        position: relative;
-        left: 30px;
-        top: 10px;
-    }
-    .skills-secondary::before{
-        position: relative;
-        left: 30px;
-        top: 10px;
-    }
-
-
-    #competencies .skill{
-        position: relative;
-        left: 20px;
-    }
-    
 }
 
 
