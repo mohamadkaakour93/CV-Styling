@@ -1,0 +1,296 @@
+body{
+    margin: 8%;
+}
+
+h1{
+    border-bottom: 1px solid gray;
+    padding-bottom: 2%;
+}
+h2, #about>h3{
+    display: none;
+}
+ img{
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    transform: rotate(-20deg);
+    width: 180px;
+}
+#about p{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 75%;
+    opacity: 50%;
+    padding-bottom: 5%;
+}
+[data-skill="5"]::after{
+    content:'\2605' '\2605'  '\2605';
+    color: white;
+}
+[data-skill="3"]::after{
+    content:'\2605' '\2605' ;
+    color: white;
+}
+[data-skill="1"]::after{
+    content:'\2605' ;
+    color: white;
+}
+[data-skill="9"]::after{
+    content:'\2605' '\2605'  '\2605'  '\2605'  '\2605' ;
+    color: white;
+}
+[data-skill="5"]::after{
+    content:'\2605' '\2605'  '\2605'  ;
+    color: white;
+}
+[data-skill="7"]::after{
+    content:'\2605' '\2605'  '\2605'  '\2605'  ;
+    color: white;
+}
+#competencies{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1%;
+    grid-template-areas: "title sp" "title ss";
+    color: white;
+}
+#competencies h3{
+    grid-area: title;
+    border-right: 1px solid black;
+    color: black;
+}
+.skills-primary{
+    grid-area: sp;
+    display: flex;
+    
+}
+.skills-secondary{
+    grid-area: ss;
+    display: flex;
+    font-size: 0.5rem;
+}
+.skill{
+    background-color: darkcyan;
+    width:20%;
+    margin: 0.5%;
+    padding: 1%;
+    
+}
+
+.skills-primary > *{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-secondary > *{
+    display: flex;
+    justify-content: space-between;
+}
+.experience-institution{
+    display: none;
+}
+#experiences{
+    display: grid;
+    margin: 4% 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:"title ex1" "title ex2";
+}
+
+#experiences h3{
+    grid-area: title;
+    border-right: 1px solid black;
+    padding-right: 12px;
+    
+}
+#experiences .experience:nth-child(2){
+    grid-area:ex1;
+    
+}
+#experiences .experience:nth-child(3){
+    
+    grid-area: ex2;
+}
+
+
+#experiences .experience:nth-child(2) h4{
+    float: left;
+    padding-left:16px ;
+    color: darkcyan;
+}
+#experiences .experience:nth-child(2) .experience-details{
+    float: right;
+}
+#experiences .experience:nth-child(2) .experience-description{
+    padding-left: 16px;
+    padding-top:20px;
+    clear:both;
+}
+#experiences .experience:nth-child(2) .experience-location,.day,.month,.year{
+    opacity: 50%;
+}
+#experiences .experience:nth-child(3) .experience-location,.day,.month,.year{
+    opacity: 50%;
+}
+#experiences .experience:nth-child(2) .experience-date-separator{
+    color: darkcyan;
+}
+#experiences .experience:nth-child(3) .experience-date-separator{
+    color: darkcyan;
+}
+#experiences .experience:nth-child(3) h4{
+    float: left;
+    color: darkcyan;
+    padding-left:16px ;
+    padding-top: 20px;
+    
+}
+#experiences .experience:nth-child(3) .experience-details{
+    float: right;
+    padding-top: 20px;
+}
+#experiences .experience:nth-child(3) .experience-description{
+    clear: both;
+    padding-left: 16px;
+    padding-bottom: 20px;
+    padding-top:20px;
+}
+
+#education{
+    display: grid;
+    margin: 4% 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:"title ed1" "title ed2";
+}
+
+#education h3{
+    grid-area: title;
+    border-right: 1px solid black;
+    padding-right: 25px;
+    
+}
+#education .experience:nth-child(2){
+    grid-area:ed1;
+    
+}
+#education .experience:nth-child(3){
+    
+    grid-area: ed2;
+}
+
+#education .experience:nth-child(2) h4{
+    float: left;
+    padding-left:16px ;
+    color: darkcyan;
+}
+#education .experience:nth-child(2) .experience-details{
+    float: right;
+}
+#education .experience:nth-child(2) .experience-description{
+    clear:both;
+    padding-top:20px;
+    padding-left: 16px;
+   
+}
+#education .experience:nth-child(2) .experience-location,.day,.month,.year{
+    opacity: 50%;
+}
+#education .experience:nth-child(3) .experience-location,.day,.month,.year{
+    opacity: 50%;
+}
+#education .experience:nth-child(2) .experience-date-separator{
+    color: darkcyan;
+}
+#education .experience:nth-child(3) .experience-date-separator{
+    color: darkcyan;
+}
+#education .experience:nth-child(3) h4{
+    float: left;
+    padding-left:16px ;
+    padding-top: 20px;
+    color: darkcyan;
+    
+}
+#education .experience:nth-child(3) .experience-details{
+    float: right;
+    padding-top: 20px;
+}
+#education .experience:nth-child(3) .experience-description{
+    clear:both;
+    padding-left: 16px;
+    padding-bottom: 15px;
+    padding-top:20px;
+}
+
+
+
+#hobbies{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    grid-template-areas: "title ul" "title ul";
+    
+    }
+    #hobbies h3{
+        grid-area: title;
+        border-right: 1px solid black;
+        padding-right: 60%;
+    }
+    #hobbies ul{
+        grid-area: ul;
+        padding-left: 10%;
+
+    }
+    dt.contact-type{
+        display: none;
+       }
+       dd.contact-value{
+           display: none;
+       }
+       .contact.contact-email{
+           background-image: url(../images/email.png);
+           width:10%;
+           height: 90px;
+           background-size: contain;
+           background-repeat: no-repeat;
+       } 
+       .contact.contact-phone{
+           background-image: url(../images/phone.png);
+           width:10%;
+           height: 90px;
+           background-size: contain;
+           background-repeat: no-repeat;
+       
+       }
+       .contact.contact-github{
+           background-image: url(../images/github.png);
+           width:10%;
+           height: 90px;
+           background-size: contain;
+           background-repeat: no-repeat;
+       
+       
+       }
+       .contact.contact-facebook{
+           background-image: url(../images/facebook.png);
+           width:10%;
+           height: 90px;
+           background-size: contain;
+           background-repeat: no-repeat;
+       }
+       
+       #contact>h3{
+           display: none;
+       }
+       .contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    
+
+       
+
+  
+    
+    
+
+
+
