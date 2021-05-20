@@ -284,6 +284,93 @@ h2, #about>h3{
         justify-content: center;
         padding-top: 5%;
     }
+    @media (max-width:500px){
+        img{
+            display: none;
+        }
+        #about p{
+            width: 100%;
+        }
+        h3{
+            color: black;
+            border-bottom: 1px solid black;
+            width: 35%;
+            font-style:italic ;
+        }
+        #competencies{
+            display: flex;
+            flex-direction: column;
+        }
+        #competencies h3{
+            border-right: 0;
+            width: 50%;
+        }
+        #experiences{
+            display: flex;
+            flex-direction: column;
+        }
+        #experiences h3{
+            border-right: 0;
+            width: 52%;
+        }
+        #education{
+            display: flex;
+            flex-direction: column;
+        }
+        #education h3{
+            border-right: 0;
+        }
+    
+        #hobbies{
+            display: flex;
+            flex-direction: column;
+        }
+        #hobbies h3{
+            border-right: 0;
+        }
+        .contact.contact-email{
+            background-image: url(../images/email.png);
+            width:30%;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        } 
+        .contact.contact-phone{
+            background-image: url(../images/phone.png);
+            width:30%;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        
+        }
+        .contact.contact-github{
+            background-image: url(../images/github.png);
+            width:30%;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        
+        
+        }
+        .contact.contact-facebook{
+            background-image: url(../images/facebook.png);
+            width:30%;
+            height: 90px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+        #contact>h3{
+            display: none;
+        }
+        .contacts{
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: flex-start;
+        }
+            
+    }
     
 
        
